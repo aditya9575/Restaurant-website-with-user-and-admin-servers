@@ -1,0 +1,22 @@
+.recipe-form-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .fixed-card-size {
+    height: 100%;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .card-img-fixed {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  

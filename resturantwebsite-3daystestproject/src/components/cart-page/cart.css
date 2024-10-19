@@ -1,0 +1,63 @@
+/* Ensure the cart is centered in the middle for all viewport sizes */
+.cart-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-container {
+  width: 100%; /* Responsive width for different viewports */
+  max-width: 900px; /* Limit max width for larger screens */
+  padding: 2px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  /* width:20rem; */
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between; /* Space between content */
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  margin-bottom: 10px; /* Add some margin between items */
+}
+
+.cart-item .dish-details {
+  flex: 2; /* Dish details take more space */
+}
+
+.cart-item .dish-details h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem; /* Slightly larger font for dish name */
+}
+
+.cart-item .cart-actions {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-item .cart-actions button {
+  margin-left: 20px; /* Add space between the action buttons */
+}
+
+.cart-item .quantity,
+.cart-item .price {
+  flex: 1; /* Allocate space for quantity and price */
+  text-align: center;
+}
+
+.total-card {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+.cart-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}

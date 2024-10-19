@@ -1,0 +1,37 @@
+.checkout-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .payment-form {
+    max-width: 700px; /* Adjust as needed for larger screens */
+    width: 90%; /* Adjust for smaller screens */
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .form-heading {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .order-summary {
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+  }
+  
+  .payment-icon {
+    margin-right: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .payment-form {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,164 @@
+/* Custom Navbar styles */
+.navbar-custom {
+    height: 80px;  
+    background: #c31432;  
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  
+    background: linear-gradient(to right, #240b36, #c31432);  
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Center the "Food Genie" text exactly in the middle */
+.navbar-brand {
+    font-weight: bold; 
+    font-size: 1.8rem !important; 
+    color: white !important; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Back icon alignment on the left */
+.back-icon {
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+.back-icon:hover {
+    color: rgb(236, 173, 249);   
+}
+
+/* Cart icon container */
+.cart-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 7px;
+    border-radius: 50%;
+}
+
+/* Icon styles */
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .icon {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hover effects */
+.navbar .icon:hover {
+    color: gray;
+}
+
+.navbar .icon.cart:hover {
+    color: blue;
+}
+
+.navbar .icon.orders:hover {
+    color: orange;
+}
+
+.navbar .icon.user:hover {
+    color: rgb(11, 225, 11);
+}
+
+.navbar .icon.userquery:hover {
+    color: rgb(136, 20, 190);
+}
+
+.navbar .icon.logout:hover {
+    color: rgb(255, 34, 34);
+}
+
+/* Dropdown menu color fix on small screens */
+.navbar-dark .navbar-toggler {
+    border-color: white; 
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: white; 
+}
+
+.navbar-dark .navbar-collapse {
+    background-color: rgb(7, 10, 34); 
+}
+
+.navbar-nav .nav-link {
+    color: white !important; 
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+    .navbar-custom {
+        height: auto; 
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        position: relative;
+        left: unset;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    .icon-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar-toggler {
+        color: white;
+        border: none;
+    }
+
+    .icon {
+        margin-left: 15px;
+    }
+}
+
+/* Responsive adjustments for medium screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .icon-container {
+        justify-content: flex-end;
+    }
+}
+
+/* Responsive adjustments for large screens */
+@media (min-width: 1024px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

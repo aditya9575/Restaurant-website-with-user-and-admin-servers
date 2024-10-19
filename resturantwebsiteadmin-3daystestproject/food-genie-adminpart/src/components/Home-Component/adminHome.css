@@ -1,0 +1,40 @@
+.admin-home {
+  display: flex;
+  min-height: 100vh;
+  padding-top: 56px; /* Adjust for navbar height (56px is the default height for Bootstrap navbar) */
+}
+
+.sidebar {
+  position: fixed;
+  top: 56px; /* Make space for the navbar */
+  left: 0;
+  width: 200px; /* Adjust the width as needed */
+  height: calc(100vh - 56px); /* Make the sidebar fill the remaining space below the navbar */
+  background-color: #f8f9fa;
+  padding: 1rem;
+  transition: width 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 0;
+    transform: translateX(-200px); /* Hide the sidebar */
+  }
+
+  .sidebar.open {
+    width: 200px;
+    transform: translateX(0); /* Show the sidebar */
+  }
+}
+
+.main-content {
+  flex: 1;
+  padding: 1rem;
+  margin-left: 200px; /* Adjust this value based on sidebar width */
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0; /* Full width when sidebar is hidden */
+  }
+}

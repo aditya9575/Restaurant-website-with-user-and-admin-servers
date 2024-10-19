@@ -1,0 +1,19 @@
+.footer {
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) { /* For small screens */
+    .footer {
+      padding: 10px;
+    }
+  
+    .social-icons {
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 991px) { /* For medium screens */
+    .footer {
+      padding: 15px;
+    }
+  }

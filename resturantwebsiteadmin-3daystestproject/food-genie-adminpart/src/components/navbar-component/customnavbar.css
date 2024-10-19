@@ -1,0 +1,34 @@
+.custom-navbar {
+  justify-content: center; /* Center the navbar contents */
+}
+
+.custom-navbar .navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Center the brand text */
+}
+
+.custom-navbar .nav-link {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-link {
+  color: inherit; /* Keep the default color */
+  background-color: transparent; /* No background color change */
+  padding: 0; /* Remove any padding if unnecessary */
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: inherit; /* Keep the original color */
+  background-color: transparent; /* Ensure no background color change */
+  text-decoration: none; /* Prevent any underline or decoration */
+}
+
+.nav-link svg {
+  font-size: 1.5rem; /* Adjust the size of the back icon if necessary */
+}

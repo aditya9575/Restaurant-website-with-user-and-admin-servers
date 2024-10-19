@@ -1,0 +1,59 @@
+.orders-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+h2 {
+  background-color: #f0f0f0;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0;
+  text-align: left;
+}
+
+.order-item {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.item-details {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.item-image {
+  max-width: 100px;
+  height: auto;
+}
+
+.action-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+}
+
+h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}

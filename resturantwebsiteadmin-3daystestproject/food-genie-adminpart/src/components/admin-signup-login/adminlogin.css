@@ -1,0 +1,20 @@
+.login-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-form h1,
+  .login-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .login-form {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  

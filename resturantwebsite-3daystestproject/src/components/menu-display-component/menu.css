@@ -1,0 +1,141 @@
+.menu-items-container {
+  padding: 20px;
+}
+
+.category-section {
+  margin-bottom: 50px;
+}
+
+.category-banner {
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
+
+.category-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.category-divider {
+  margin: 20px 0;
+}
+
+/* Flexbox for consistent card layout */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* Adjust button height for consistency */
+.btn {
+  min-height: 45px; /* Set a fixed height for buttons */
+  width: 100%;      /* Ensure full width */
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;  /* Adjust padding for centered text */
+  font-size: 1rem;
+}
+
+/* Consistent spacing */
+.form-group {
+  margin-bottom: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .category-title {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.15rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-title {
+    font-size: 1.75rem;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
+
+  .category-banner {
+    padding: 30px;
+  }
+
+  .category-divider {
+    margin: 10px 0;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px;
+    min-height: 40px; /* Adjust button height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .category-title {
+    font-size: 1.5rem;
+  }
+
+  .card-img-top {
+    height: 120px;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+
+  .card-text {
+    font-size: 0.75rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 8px;
+    min-height: 35px; /* Further adjust button height for very small screens */
+  }
+}
